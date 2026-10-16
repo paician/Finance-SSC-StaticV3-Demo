@@ -1,6 +1,6 @@
 (() => {
 'use strict';
-const V2_URL = 'https://paician.github.io/Finance-SSC-Static-Demo/?role=employee';
+const V2_URL = 'https://applink.larksuite.com/client/web_url/open?mode=window&url=https%3a%2f%2fpaician.github.io%2fFinance-SSC-Static-Demo%2f%3frole%3demployee';
 const icons={
   home:'<path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-7h6v7"/>',
   users:'<circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6m1 4a5 5 0 0 1 3 5"/>',
@@ -40,7 +40,7 @@ const url=new URL(location.href);
 const state={role:url.searchParams.get('role')==='manager'?'manager':'employee',page:'home',search:'',groups:{hr:true,finance:true},modal:null,mobile:false,calendarView:'cards',calendarYear:2026,calendarMonth:11,calendarRegion:'MY',travelSearch:'',travelRegion:'all'};
 const localeI18n = window.HytechSSCIntl;
 localeI18n.resolve();
-const v2Link=`<a class="v2-link" href="${V2_URL}" target="_blank" rel="noopener noreferrer">查看 V2 經典版 ↗</a>`;
+const v2Link=`<a class="v2-link" href="${V2_URL}" target="_blank" rel="noopener noreferrer">查看 V2 ↗</a>`;
 const docs=[['Malaysia Travel Policy','file'],['Malaysia Expense Policy','file'],['Malaysia Corporate Card Policy','wallet'],['Malaysia Payment Guideline','wallet'],['Malaysia Finance Calendar','calendar']];
 const applications=[['FSSC-20261004-001','出差申請','2026/10/04','MYR 1,625.00','進行中'],['FSSC-20261002-003','出差申請','2026/10/02','MYR 2,444.00','進行中'],['FSSC-20261001-002','費用報銷','2026/10/01','MYR 426.40','需補件'],['FSSC-20260928-001','費用報銷','2026/09/28','MYR 845.00','已完成']];
 const travelPeople=[['AC','Amy Chen','Malaysia · Kuala Lumpur','9/25 - 9/29'],['KL','Kevin Lin','Singapore','9/24 - 9/28'],['LW','Lily Wang','Japan · Tokyo','9/23 - 9/27'],['DW','Daniel Wu','Germany · Frankfurt','9/22 - 9/30']];
